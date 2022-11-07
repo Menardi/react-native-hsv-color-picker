@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
   View,
   TouchableWithoutFeedback,
-  ViewPropTypes,
   PanResponder,
   StyleSheet,
 } from 'react-native';
@@ -10,6 +9,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import PropTypes from 'prop-types';
 import chroma from 'chroma-js';
 import normalizeValue from './utils';
+import { ViewPropTypes } from "deprecated-react-native-prop-types";
 
 export default class SaturationValuePicker extends Component {
   constructor(props) {

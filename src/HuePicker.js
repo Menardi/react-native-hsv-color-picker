@@ -3,7 +3,6 @@ import {
   Animated,
   View,
   TouchableWithoutFeedback,
-  ViewPropTypes,
   PanResponder,
   StyleSheet,
 } from 'react-native';
@@ -11,6 +10,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import PropTypes from 'prop-types';
 import chroma from 'chroma-js';
 import normalizeValue from './utils';
+import { ViewPropTypes } from "deprecated-react-native-prop-types";
 
 export default class HuePicker extends Component {
   constructor(props) {
